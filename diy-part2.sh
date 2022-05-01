@@ -15,3 +15,4 @@
 sed -i 's/\/opt/\/mnt\/sda3\/docker/g' feeds/luci/applications/luci-app-docker/root/etc/docker/daemon.json
 rm -rf feeds/packages/utils/coremark
 #sed -i 's/(PKG_HASH|PKG_MD5SUM|PKG_MIRROR_HASH).*/\1:=skip/' feeds/packages/utils/containerd/Makefile
+sed -i 's/PKG_HASH.*/PKG_HASH:=skip/' feeds/packages/utils/containerd/Makefile
